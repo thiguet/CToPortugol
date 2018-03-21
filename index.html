@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Convert C to Portugol</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="./CToPortugol.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+        
+        <script src="./CToPortugol.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>   
+        <div class="container" >
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h1 class="Indielize"> Conversor C to Portugol (One-sided still)
+                </div>
+            </div>
+            <div clascs="row">
+                <div class="col-sm-6">
+                    <h3 class="Indielize">C</h3>
+                    <textarea id="C" class="form-control textarea" onchange="convertToPortugol()" >
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+    printf("Hello Reader! You're the world I am talking about.");
+    return 0;
+}
+
+                    </textarea>
+                </div>
+                <div class="col-sm-6">
+                    <h3 class="Indielize">Portugol</h3>
+
+                    <textarea id="Portugol" class="form-control textarea">
+ALGORITMO
+    ESCREVA "Hello Reader! You're the world I am talking about."
+FIM_ALGORITMO
+                    </textarea>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
